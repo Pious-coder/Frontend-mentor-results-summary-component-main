@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    top: 150px;
+    left: 150px;
+    display: flex;
+}
+
+.card-1 {
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Cobalt-blue));
+    border-radius: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    z-index: 4;
+}
+
+.header {
+    color: var(--Light-lavender);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.round {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, var(--Cobalt-blue), var(--Persian-blue-circle));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.round h2 {
+    color: var(--White);
+    font-size: 2.5rem;
+}
+
+.round span {
+    color: var(--Light-slate-blue-background);
+    font-size: 0.8rem;
+}
+
+.remark {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: var(--White);
+}
+
+.remark-details {
+    color: var(--Light-lavender);
+    width: 72%;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-2 {
+    background-color: var(--White);
+    border-radius: 0px 20px 20px 0px;
+    padding: 30px;
+    width: 37%;
+    margin-left: -10px;
+    z-index: 2;
+}
+
+.header-2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+.ranks {
+    display: flex;
+    margin: 15px 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(12, 72%, 73%, 0.087);
+    border-radius: 10px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.name img {
+    margin-right: 10px;
+}
+
+.score {
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.score span {
+    color: rgb(106, 103, 103);
+}
+
+.react {
+    color: var(--Light-red);
+    font-weight: bold;
+}
+
+.rank-1 {
+    background-color: hsla(39, 100%, 56%, 0.124);
+}
+
+.memo {
+    color: var(--Orangey-yellow);
+    font-weight: bold;
+}
+
+
+.rank-2 {
+    background-color: hsla(166, 100%, 37%, 0.101);
+}
+
+.verb {
+    color: var(--Green-teal);
+    font-weight: bold;
+}
+
+.rank-3 {
+    background-color: hsla(252, 100%, 67%, 0.094);
+}
+
+.visual {
+    color: var(--Light-slate-blue-background);
+    font-weight: bold;
+}
+
+button {
+    background-color: var(--Dark-gray-blue);
+    color: var(--Pale-blue);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 85px;
+    margin: 15px 10px;
+    cursor: pointer;
+    width: 90%;
+}
+
+button:active {
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Cobalt-blue));
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 250px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:720px) {
+    .container {
+        flex-direction: column;
+        top: 10px;
+        left: 50px;
+    }
+
+    .card-1 {
+        width: 80%;
+        border-radius: 0px 0px 20px 20px;
+        padding: 20px;
+        z-index: 4;
+    }
+
+    .remark-details {
+        width: 90%;
+        font-size: 0.9rem;
+        margin-top: 3px;
+    }
+
+    .card-2 {
+        width: 80%;
+        border-radius: 0px 0px 20px 20px;
+        margin-top: -25px;
+        margin-left: 1px;
+        padding: 30px 10px;
+    }
+}
